@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangeman Game</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" href="assets/success.mp3" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="start-game">
+        <button id="start-game">start play</button>
+      </div>
+      <div class="game-info">
+        <div class="game-name">Hangeman Game</div>
+        <div class="timer">
+          <span class="mintes"> 1 </span> :
+          <div class="seconds">10</div>
+        </div>
+        <div class="category">Word From : <span></span></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="hangman-draw">
+          <div class="the-draw">
+            <div class="the-stand"></div>
+            <div class="the-hang"></div>
+            <div class="the-rope"></div>
+            <div class="the-man">
+              <div class="head"></div>
+              <div class="body"></div>
+              <div class="hands"></div>
+              <div class="legs"></div>
+            </div>
+          </div>
+        </div>
+        <div class="letters"></div>
+      </div>
+      <hr />
+      <div class="letters-guess"></div>
+    </div>
+
+    <p class="timerrew"></p>
+    <button class="reset">reset</button>
+
+    <audio src="assets/sound/success-1-6297.mp3" id="success"></audio>
+    <audio src="assets/sound/negative_beeps-6008.mp3" id="fail"></audio>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
